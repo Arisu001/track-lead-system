@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "has_top_3": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "player": {
+                    "nbt": "{Tags: [\"tls_handler\"]}"
+                },
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags: [\"tls_stg__txt_top3__int\"]}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [ "has_top_3" ]
+    ],
+    "rewards": {
+        "function": "config:events/rankings"
+    },
+    "sends_telemetry_event": true
+}

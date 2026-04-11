@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "has_checkpoint": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "player": {
+                    "nbt": "{Tags: [\"tls_handler\"]}"
+                },
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags: [\"tls_stg__txt_chec__int\"]}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [ "has_checkpoint" ]
+    ],
+    "rewards": {
+        "function": "config:events/checkpoint"
+    },
+    "sends_telemetry_event": true
+}

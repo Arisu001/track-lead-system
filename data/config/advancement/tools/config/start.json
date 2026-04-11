@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "has_start": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "player": {
+                    "nbt": "{Tags: [\"tls_handler\"]}"
+                },
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags: [\"tls_stg__txt_start__int\"]}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [ "has_start" ]
+    ],
+    "rewards": {
+        "function": "config:events/start"
+    },
+    "sends_telemetry_event": true
+}

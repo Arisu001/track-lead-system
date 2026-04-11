@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "open": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "compass",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "settings": 1,
+                            "config": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [ "open" ]
+    ],
+    "rewards": {
+        "function": "config:events/open_settings"
+    },
+    "sends_telemetry_event": true
+}

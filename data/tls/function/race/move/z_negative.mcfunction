@@ -1,0 +1,11 @@
+execute if score @a[scores={tls.rank=1}, limit=1] tls.pos_z > @a[scores={tls.rank=2}, limit=1] tls.pos_z run scoreboard players operation @a[scores={tls.rank=1}] tls.rank >< @a[scores={tls.rank=2}] tls.rank
+execute if score @a[scores={tls.rank=2}, limit=1] tls.pos_z > @a[scores={tls.rank=3}, limit=1] tls.pos_z run scoreboard players operation @a[scores={tls.rank=2}] tls.rank >< @a[scores={tls.rank=3}] tls.rank
+execute if score @a[scores={tls.rank=3}, limit=1] tls.pos_z > @a[scores={tls.rank=4}, limit=1] tls.pos_z run scoreboard players operation @a[scores={tls.rank=3}] tls.rank >< @a[scores={tls.rank=4}] tls.rank
+execute if score @a[scores={tls.rank=4}, limit=1] tls.pos_z > @a[scores={tls.rank=5}, limit=1] tls.pos_z run scoreboard players operation @a[scores={tls.rank=4}] tls.rank >< @a[scores={tls.rank=5}] tls.rank
+execute if score @a[scores={tls.rank=5}, limit=1] tls.pos_z > @a[scores={tls.rank=6}, limit=1] tls.pos_z run scoreboard players operation @a[scores={tls.rank=5}] tls.rank >< @a[scores={tls.rank=6}] tls.rank
+execute if score @a[scores={tls.rank=6}, limit=1] tls.pos_z > @a[scores={tls.rank=7}, limit=1] tls.pos_z run scoreboard players operation @a[scores={tls.rank=6}] tls.rank >< @a[scores={tls.rank=7}] tls.rank
+execute if score @a[scores={tls.rank=7}, limit=1] tls.pos_z > @a[scores={tls.rank=8}, limit=1] tls.pos_z run scoreboard players operation @a[scores={tls.rank=7}] tls.rank >< @a[scores={tls.rank=8}] tls.rank
+execute if score @a[scores={tls.rank=8}, limit=1] tls.pos_z > @a[scores={tls.rank=9}, limit=1] tls.pos_z run scoreboard players operation @a[scores={tls.rank=8}] tls.rank >< @a[scores={tls.rank=9}] tls.rank
+execute if score @a[scores={tls.rank=9}, limit=1] tls.pos_z > @a[scores={tls.rank=10}, limit=1] tls.pos_z run scoreboard players operation @a[scores={tls.rank=9}] tls.rank >< @a[scores={tls.rank=10}] tls.rank
+execute if score @a[scores={tls.rank=10}, limit=1] tls.pos_z > @a[scores={tls.rank=11}, limit=1] tls.pos_z run scoreboard players operation @a[scores={tls.rank=10}] tls.rank >< @a[scores={tls.rank=11}] tls.rank
+execute if score @a[scores={tls.rank=11}, limit=1] tls.pos_z > @a[scores={tls.rank=12}, limit=1] tls.pos_z run scoreboard players operation @a[scores={tls.rank=11}] tls.rank >< @a[scores={tls.rank=12}] tls.rank

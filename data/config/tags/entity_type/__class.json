@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "area_effect_cloud",
+        "armor_stand",
+        "falling_block",
+        "marker",
+        "block_display",
+        "item_display",
+        "text_display",
+        "interaction"
+    ]
+}
