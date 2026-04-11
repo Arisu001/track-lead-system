@@ -12,12 +12,16 @@ advancement revoke @a only config:tools/settings/open open
 advancement revoke @a only config:tools/settings/close close
 advancement revoke @a only config:tools/settings/start has_placed
 advancement revoke @a only config:tools/settings/checkpoint has_placed
+advancement revoke @a only config:tools/settings/finish has_placed
 advancement revoke @a only config:tools/config/start has_start
 advancement revoke @a only config:tools/config/checkpoint has_checkpoint
+advancement revoke @a only config:tools/config/finish has_finish
 advancement revoke @a only config:tools/config/how_to_use has_help
 advancement revoke @a only config:tools/config/top_3 has_top_3
 advancement revoke @a only config:tools/config/top_5 has_top_5
 advancement revoke @a only config:tools/config/top_10 has_top_10
+advancement revoke @a only config:tools/config/previous_page has_previous_pahge
+advancement revoke @a only config:tools/config/next_page has_next_page
 
 team add tls_bad
 team add tls_good
@@ -26,13 +30,17 @@ team modify tls_good color green
 
 tag @a remove tls_stg__config
 tag @a remove tls_stg__chec
+tag @a remove tls_stg__finish
 tag @a remove tls_stg__start
 tag @a remove tls_stg__opened
+tag @a remove tls_stg__done
 tag @a[tag=tls_handler] add tls_stg__closed
 
 clear @a #config:config[custom_data={settings: 1b, config: 1b}]
 clear @a #config:config[custom_data={start: 1b, config: 1b}]
 clear @a #config:config[custom_data={checkpoint: 1b, config: 1b}]
+clear @a #config:config[custom_data={finish: 1b, config: 1b}]
+clear @a #config:config[custom_data={undo: 1b, config: 1b}]
 
 data modify storage config:settings checkpoints.id set value ""
 data remove storage config:inventory settings

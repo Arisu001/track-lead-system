@@ -6,7 +6,7 @@
             "type": "player",
             "looking_at": {
                 "type": "interaction",
-                "nbt": "{Tags: [\"tls_stg__txt_top3__int\"]}"
+                "nbt": "{Tags: [\"tls_stg__int_top3\"]}"
             }
         }
     }

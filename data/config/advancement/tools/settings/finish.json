@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "has_placed": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "wooden_axe",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "finish": 1,
+                            "config": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [ "has_placed" ]
+    ],
+    "sends_telemetry_event": true
+}

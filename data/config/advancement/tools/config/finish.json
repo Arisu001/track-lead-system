@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "has_top_3": {
+        "has_finish": {
             "trigger": "player_interacted_with_entity",
             "conditions": {
                 "player": {
@@ -8,16 +8,16 @@
                 },
                 "entity": {
                     "type": "interaction",
-                    "nbt": "{Tags: [\"tls_stg__int_top3\"]}"
+                    "nbt": "{Tags: [\"tls_stg__int_finish\"]}"
                 }
             }
         }
     },
     "requirements": [
-        [ "has_top_3" ]
+        [ "has_finish" ]
     ],
     "rewards": {
-        "function": "config:events/rankings"
+        "function": "config:events/finish"
     },
     "sends_telemetry_event": true
 }

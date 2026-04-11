@@ -32,7 +32,7 @@
         "entity": "this",
         "name": {
             "text": "Checkpoint",
-            "color": "green",
+            "color": "gold",
             "bold": true,
             "italic": false,
             "extra": [
@@ -52,6 +52,34 @@
             {
                 "condition": "reference",
                 "name": "config:this/config/has_checkpoint"
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Finish",
+            "color": "red",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {
+                    "text": "  |  ",
+                    "color": "white",
+                    "bold": false
+                },
+                {
+                    "text": "Right-click",
+                    "color": "gray",
+                    "bold": false
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:this/config/has_finish"
             }
         ]
     },
@@ -125,6 +153,31 @@
             {
                 "condition": "reference",
                 "name": "config:this/config/has_checkpoint"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to place your finish",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:this/config/has_finish"
             }
         ]
     },

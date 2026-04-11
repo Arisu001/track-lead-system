@@ -8,7 +8,7 @@
                 },
                 "entity": {
                     "type": "interaction",
-                    "nbt": "{Tags: [\"tls_stg__txt_top10__int\"]}"
+                    "nbt": "{Tags: [\"tls_stg__int_top10\"]}"
                 }
             }
         }
