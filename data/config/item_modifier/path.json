@@ -1,0 +1,296 @@
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Start",
+            "color": "green",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {
+                    "text": "  |  ",
+                    "color": "white",
+                    "bold": false
+                },
+                {
+                    "text": "Right-click",
+                    "color": "gray",
+                    "bold": false
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:this/config/path/has_start"
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Checkpoint",
+            "color": "gold",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {
+                    "text": "  |  ",
+                    "color": "white",
+                    "bold": false
+                },
+                {
+                    "text": "Right-click",
+                    "color": "gray",
+                    "bold": false
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:this/config/path/has_checkpoint"
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Finish",
+            "color": "red",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {
+                    "text": "  |  ",
+                    "color": "white",
+                    "bold": false
+                },
+                {
+                    "text": "Right-click",
+                    "color": "gray",
+                    "bold": false
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:this/config/path/has_finish"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "INFO",
+                "color": "blue",
+                "bold": true,
+                "italic": false,
+                "underlined": true,
+                "extra": [
+                    {
+                        "text": ":",
+                        "color": "yellow",
+                        "underlined": false
+                    }
+                ]
+            },
+            ""
+        ],
+        "mode": "insert",
+        "offset": 0
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to place your start",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:this/config/path/has_start"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to place your checkpoints",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:this/config/path/has_checkpoint"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to place your finish",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:this/config/path/has_finish"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            "",
+            {
+                "text": "----------------------------",
+                "color": "dark_gray",
+                "italic": false
+            },
+            ""
+        ],
+        "mode": "replace_section",
+        "offset": 3,
+        "size": 4
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Actual",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Nothing",
+                        "color": "red"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 4
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "custom_data": {
+                "path": {
+                    "start": 1
+                },
+                "config": 1
+            }
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:this/config/path/has_start"
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "custom_data": {
+                "path": {
+                    "checkpoint": 1
+                },
+                "config": 1
+            }
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:this/config/path/has_checkpoint"
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "custom_data": {
+                "path": {
+                    "finish": 1
+                },
+                "config": 1
+            }
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:this/config/path/has_finish"
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "consumable": {
+                "consume_seconds": 999999999,
+                "has_consume_particles": false
+            },
+            "enchantments": {
+                "infinity": 3
+            }
+        }
+    },
+    {
+        "function": "toggle_tooltips",
+        "toggles": {
+            "attribute_modifiers": false,
+            "consumable": true,
+            "enchantments": false,
+            "unbreakable": true
+        }
+    }
+]

@@ -4,11 +4,13 @@
     "predicate": {
         "slots": {
             "weapon": {
-                "items": "wooden_axe",
+                "items": "paper",
                 "count": 1,
                 "components": {
                     "custom_data": {
-                        "checkpoint": 1,
+                        "path": {
+                            "checkpoint": 1
+                        },
                         "config": 1
                     }
                 }

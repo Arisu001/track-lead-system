@@ -2,13 +2,15 @@
     "condition": "entity_properties",
     "entity": "this",
     "predicate": {
-        "slots": {
-            "weapon": {
-                "items": "wooden_axe",
+        "equipment": {
+            "mainhand": {
+                "items": "paper",
                 "count": 1,
                 "components": {
                     "custom_data": {
-                        "finish": 1,
+                        "path": {
+                            "finish": 1
+                        },
                         "config": 1
                     }
                 }

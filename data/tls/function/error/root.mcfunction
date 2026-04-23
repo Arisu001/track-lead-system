@@ -5,4 +5,3 @@ particle dust{color: [0, 0, 0], scale: 1} ~ ~ ~ 1 1 1 .1 100 force @s
 function tls:hud/screen/error
 function tls:hud/chat/error
 function tls:error/repaired
-w

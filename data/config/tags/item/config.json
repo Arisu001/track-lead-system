@@ -2,7 +2,8 @@
     "replace": true,
     "values": [
         "compass",
-        "wooden_axe",
-        "spectral_arrow"
+        "paper",
+        "spectral_arrow",
+        "player_head"
     ]
 }

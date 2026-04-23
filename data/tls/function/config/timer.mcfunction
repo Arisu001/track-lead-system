@@ -1,7 +1,8 @@
 tag @a remove tls_stg__start
-clear @a wooden_axe[custom_data={start: 1b, config: 1b}]
-clear @a wooden_axe[custom_data={checkpoint: 1b, config: 1b}]
-clear @a wooden_axe[custom_data={finish: 1b, config: 1b}]
+clear @a #config:config[custom_data={start: 1b, config: 1b}]
+clear @a #config:config[custom_data={checkpoint: 1b, config: 1b}]
+clear @a #config:config[custom_data={finish: 1b, config: 1b}]
+clear @a #config:config[custom_data={undo: 1b, config: 1b}]
 
 execute unless score $tls_timer tms.value matches -5.. run function tls:config/timer/root
 scoreboard players remove $tls_timer tms.value 1
