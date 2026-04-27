@@ -20,6 +20,6 @@ function config:tst/play_record {idx_play: 12}
 clear @s player_head[item_model="air"]
 
 gamemode spectator @s
-# team join ghost @s
+team join tls_ghost @s
 $execute if score @e[tag=tls_rec__$(name), limit=1] tls.id = @s tls.id run tag @s add tls_has__ghost
 $execute if score @e[tag=tls_rec__$(name), limit=1] tls.id = @s tls.id run spectate @e[tag=tls_rec__$(name), limit=1] @s

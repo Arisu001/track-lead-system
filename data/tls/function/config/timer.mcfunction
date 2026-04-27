@@ -1,7 +1,7 @@
 tag @a remove tls_stg__start
-clear @a #config:config[custom_data={start: 1b, config: 1b}]
-clear @a #config:config[custom_data={checkpoint: 1b, config: 1b}]
-clear @a #config:config[custom_data={finish: 1b, config: 1b}]
+clear @a #config:config[custom_data={path: {start: 1b}, config: 1b}]
+clear @a #config:config[custom_data={path: {checkpoint: 1b}, config: 1b}]
+clear @a #config:config[custom_data={path: {finish: 1b}, config: 1b}]
 clear @a #config:config[custom_data={undo: 1b, config: 1b}]
 
 execute unless score $tls_timer tms.value matches -5.. run function tls:config/timer/root

@@ -20,6 +20,10 @@ scoreboard objectives add tls.pos_x dummy
 scoreboard objectives add tls.pos_z dummy
 scoreboard objectives add tls.pos_ox dummy
 scoreboard objectives add tls.pos_oz dummy
+scoreboard objectives add tls.dx dummy
+scoreboard objectives add tls.dz dummy
+scoreboard objectives add tls.progress dummy
+scoreboard objectives add tls.sort dummy
 scoreboard objectives add tls_Properties trigger
 scoreboard objectives add tls_Path trigger
 scoreboard objectives add tls_Mode trigger

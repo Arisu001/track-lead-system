@@ -1,4 +1,4 @@
- {
+{
     "criteria": {
         "has_placed": {
             "trigger": "using_item",
@@ -8,8 +8,8 @@
                     "count": 1,
                     "components": {
                         "custom_data": {
-                            "path": {
-                                "finish": 1
+                            "mode": {
+                                "kart": 1
                             },
                             "config": 1
                         }

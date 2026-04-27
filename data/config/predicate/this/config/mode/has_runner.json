@@ -2,6 +2,6 @@
     "condition": "entity_properties",
     "entity": "this",
     "predicate": {
-        "nbt": "{Tags: [\"tls_stg__checkpoint\"]}"
+        "nbt": "{Tags: [\"tls_stg__runner\"]}"
     }
 }

@@ -2,14 +2,14 @@
     "condition": "entity_properties",
     "entity": "this",
     "predicate": {
-        "slots": {
-            "weapon": {
+        "equipment": {
+            "mainhand": {
                 "items": "paper",
                 "count": 1,
                 "components": {
                     "custom_data": {
-                        "path": {
-                            "checkpoint": 1
+                        "mode": {
+                            "boat": 1
                         },
                         "config": 1
                     }
