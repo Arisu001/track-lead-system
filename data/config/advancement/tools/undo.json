@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "undo": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "spectral_arrow",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "undo": 1,
+                            "config": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [ "undo" ]
+    ],
+    "rewards": {
+        "function": "config:events/undo"
+    },
+    "sends_telemetry_event": true
+}

@@ -20,6 +20,9 @@ scoreboard players reset * tls_Mode
 scoreboard players reset * tls_Toggle
 
 advancement revoke @a only config:tools/open open
+advancement revoke @a only config:tools/uninstall uninstall
+advancement revoke @a only config:tools/undo undo 
+advancement revoke @a only config:tools/remove remove
 advancement revoke @a only config:tools/path/start has_placed
 advancement revoke @a only config:tools/path/checkpoint has_placed
 advancement revoke @a only config:tools/path/finish has_placed
@@ -83,6 +86,7 @@ clear @a #config:config[custom_data={mode: {kart: 1b}, config: 1b}]
 clear @a #config:config[custom_data={mode: {boat: 1b}, config: 1b}]
 clear @a #config:config[custom_data={mode: {runner: 1b}, config: 1b}]
 clear @a #config:config[custom_data={undo: 1b, config: 1b}]
+clear @a #config:config[custom_data={remove: 1b, config: 1b}]
 clear @a #config:config[custom_data={pseudo: 1b, config: 1b}]
 
 data remove storage config:settings starts

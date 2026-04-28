@@ -15,4 +15,5 @@ tag @s remove tls_stg__runner
 tag @s add tls_stg__config
 
 scoreboard players reset $tls_mode tms.var
+scoreboard players reset $tls_edit tms.var
 scoreboard players operation $tls_path tms.var = @s tls_Path

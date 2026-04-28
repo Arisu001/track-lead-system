@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "uninstall": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "paper",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "uninstall": 1,
+                            "config": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [ "uninstall" ]
+    ],
+    "rewards": {
+        "function": "config:events/uninstall"
+    },
+    "sends_telemetry_event": true
+}

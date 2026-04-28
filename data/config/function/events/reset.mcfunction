@@ -1,3 +1,5 @@
+advancement revoke @s only config:tools/remove remove
+advancement revoke @s only config:tools/path/start has_placed
 advancement revoke @s only config:tools/path/start has_placed
 advancement revoke @s only config:tools/path/checkpoint has_placed
 advancement revoke @s only config:tools/path/finish has_placed

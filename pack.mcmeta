@@ -6,7 +6,7 @@
             "max_exlusive": 94.1
         },
         "description": [
-        "type: data pack",
+        "type: datapack",
         "name: track-lead",
         "action: config",
         "result: player rank",

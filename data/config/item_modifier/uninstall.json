@@ -1,0 +1,86 @@
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Uninstall",
+            "color": "red",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {
+                    "text": "  |  ",
+                    "color": "white",
+                    "bold": false
+                },
+                {
+                    "text": "Double right-click",
+                    "color": "gray",
+                    "bold": false
+                }
+            ]
+        }
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "INFO",
+                "color": "blue",
+                "bold": true,
+                "italic": false,
+                "underlined": true,
+                "extra": [
+                    {
+                        "text": ":",
+                        "color": "yellow",
+                        "underlined": false
+                    }
+                ]
+            },
+            ""
+        ],
+        "mode": "insert",
+        "offset": 0
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Double right-click to uninstall the DataPack",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "consumable": {
+                "consume_seconds": 999999999,
+                "has_consume_particles": false
+            },
+            "enchantments": {
+                "infinity": 3
+            }
+        }
+    },
+    {
+        "function": "toggle_tooltips",
+        "toggles": {
+            "consumable": true,
+            "enchantments": false,
+            "unbreakable": true
+        }
+    }
+]

@@ -14,12 +14,12 @@ Use compass to open the menu
 
 ### How to modify properties
 ```
-Right click on the text to modify
+Right click on the dialog to config your run
 ```
 
 ### Uninstall
 ```
-Instant double right-click on the barrier item
+Double right-click on the barrier item
 ```
 
 ## Compatibility

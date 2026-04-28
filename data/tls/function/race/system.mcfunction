@@ -13,5 +13,6 @@ function tls:player/inventory {idx_rec: 12}
 
 function tls:player/position
 
-scoreboard players set $tls_pass tms.temp 23
+# Rank
+scoreboard players set $tls_pass tms.temp 13
 function tls:race/system/root

@@ -1,5 +1,11 @@
 {
     "replace": true,
+    "comment": [
+        "compass            <===>       menu",
+        "paper              <===>       settings",
+        "spectral_arrow     <===>       undo",
+        "player_head        <===>       mode + ghost"
+    ],
     "values": [
         "compass",
         "paper",
