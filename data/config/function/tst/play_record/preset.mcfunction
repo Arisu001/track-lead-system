@@ -1,8 +1,8 @@
 execute unless score @s tls.id matches 1.. run scoreboard players add $tls_id tms.var 1
 execute unless score @s tls.id matches 1.. run scoreboard players operation @s tls.id = $tls_id tms.var
 
-$execute as @s[scores={tls.id=1..}, tag=!tls_has__ghost] run summon mannequin ~ ~ ~ {Tags: ["tls_rec__trg", "tls_rec__$(name)", "tls"], NoGravity: 1b, profile: "$(name)"}
-$execute as @e[tag=tls_rec__$(name), distance=..2] run scoreboard players operation @s tls.id = @p[distance=..2] tls.id
+$execute as @s[scores={tls.id=1..}, tag=!tls_has__ghost] run summon mannequin ~ ~ ~ {Tags: ["tls_record__trg", "tls_rec__$(name)", "tls"], NoGravity: 1b, profile: "$(name)"}
+$execute as @e[tag=tls_rec__$(name), distance=..2] run scoreboard players operation @s tls.id = @p tls.id
 
 function config:tst/play_record {idx_play: 1}
 

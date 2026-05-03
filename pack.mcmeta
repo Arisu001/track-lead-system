@@ -7,10 +7,10 @@
         },
         "description": [
         "type: data pack",
-        "name: track-lead",
+        "name: lucky_games",
         "action: config",
-        "result: player rank",
-        "version: 1.0.0",
+        "result: play",
+        "version: 1.7.0b",
         "created by: Arisu001"
         ]
     },

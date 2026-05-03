@@ -10,8 +10,8 @@
 			"key": "toggle",
 			"label": "Ghost",
 			"options": [
-				{"id": "disabled", "display": { "text": "Disabled", "color": "gray"}, "initial": false},
-				{"id": "activated", "display": { "text": "Activated", "color": "green"}, "initial": false}
+				{"id": "disabled", "display":  {"text": "Disabled",  "color":  "gray"}, "initial": false},
+				{"id": "activated", "display": {"text": "Activated", "color": "green"}, "initial": false}
 			]
 		}
 	],
@@ -22,7 +22,7 @@
 	"actions": [
 		{"label": "Confirm", "action": {"type": "dynamic/run_command", "template": "data modify storage config:settings toggle set value {ghost: \"$(toggle)\"}"}},
 		
-		{"label": { "text": "Back to ", "extra": [{"text": "menu", "color": "gold", "italic": true}]}, "action": {"type": "show_dialog", "dialog": "config:menu"}},
-		{"label": { "text": "Back to main menu"}, "action": {"type": "show_dialog", "dialog": "config:config"}}
+		{"label": { "text":           "Back to ", "extra": [{"text": "menu", "color": "gold", "italic": true}]}, "action": {"type": "show_dialog", "dialog":   "config:menu"}},
+		{"label": { "text": "Back to main menu"}, 																 "action": {"type": "show_dialog", "dialog": "config:config"}}
 	]
 }

@@ -8,7 +8,9 @@
                     "count": 1,
                     "components": {
                         "custom_data": {
-                            "settings": 1,
+                            "tools": {
+                                "settings": 1
+                            },
                             "config": 1
                         }
                     }

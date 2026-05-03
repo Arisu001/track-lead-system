@@ -9,11 +9,11 @@
 	"after_action": "close",
 	"columns": 3,
 	"actions": [
-		{"label": {"text": "Kart", "color": "dark_aqua"}, "action": {"type": "run_command", "command": "trigger tls_Mode set 1"}},
-		{"label": {"text": "Boat", "color": "aqua"}, "action": {"type": "run_command", "command": "trigger tls_Mode set 2"}},
-		{"label": {"text": "Runner", "color": "green"}, "action": {"type": "run_command", "command": "trigger tls_Mode set 3"}},
+		{"label": {"text": "Kart",   "color": "yellow"},      "action": {"type": "run_command", "command": "trigger tls_Mode set 1"}},
+		{"label": {"text": "Boat",   "color":   "aqua"},      "action": {"type": "run_command", "command": "trigger tls_Mode set 2"}},
+		{"label": {"text": "Runner", "color":  "green"},      "action": {"type": "run_command", "command": "trigger tls_Mode set 3"}},
 		
-		{"label": { "text": "Back to ", "extra": [{"text": "menu", "color": "gold", "italic": true}]}, "action": {"type": "show_dialog", "dialog": "config:menu"}},
-		{"label": { "text": "Back to menu"}, "action": {"type": "show_dialog", "dialog": "config:config"}}
+		{"label": { "text":      "Back to ", "extra": [{"text": "menu", "color": "gold", "italic": true}]}, "action": {"type": "show_dialog", "dialog":   "config:menu"}},
+		{"label": { "text": "Back to menu"}, 																"action": {"type": "show_dialog", "dialog": "config:config"}}
 	]
 }

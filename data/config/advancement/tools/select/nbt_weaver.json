@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "component": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "config:entity/player/item_in_hand/nbt_weaver"
+                    }
+                ],
+                "entity": {
+                    "type": "interaction",
+                    "nbt": {
+                        "Tags": ["tls__player_cursor__trg"]
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["component"]
+    ],
+    "rewards": {
+        "function": "config:events/entity/properties"
+    },
+    "sends_telemetry_event": true
+}

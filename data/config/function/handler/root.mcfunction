@@ -1,12 +1,21 @@
-# Categorie = "path"
-execute if score $tls_path tms.var matches 1 run function config:player/inventory/menu {cat: "path", type: "start", model: "wooden_axe"}
-execute if score $tls_path tms.var matches 2 run function config:player/inventory/menu {cat: "path", type: "checkpoint", model: "wooden_axe"}
-execute if score $tls_path tms.var matches 3 run function config:player/inventory/menu {cat: "path", type: "finish", model: "wooden_axe"}
+# ————— Category path —————
+# Start  |  Checkpoint  |  Finish
+execute if score @s tls.path matches 1 run function config:player/inventory/menu {category: "path", type:      "start", value: 1, model: "wooden_axe"}
+execute if score @s tls.path matches 2 run function config:player/inventory/menu {category: "path", type: "checkpoint", value: 2, model: "wooden_axe"}
+execute if score @s tls.path matches 3 run function config:player/inventory/menu {category: "path", type:     "finish", value: 3, model: "wooden_axe"}
 
-# Categorie = "mode"
-execute if score $tls_mode tms.var matches 1 run function config:player/inventory/menu {cat: "mode", type: "kart", model: "minecart"}
-execute if score $tls_mode tms.var matches 2 run function config:player/inventory/menu {cat: "mode", type: "boat", model: "oak_boat"}
-execute if score $tls_mode tms.var matches 3 run function config:player/inventory/menu {cat: "mode", type: "runner", model: "player_head"}
+# ————— Categorie mode —————
+# Kart  |  Boat  |  Runner
+execute if score @s tls.mode matches 1 run function config:player/inventory/menu {category: "mode", type:   "kart", value: 1, model:    "minecart"}
+execute if score @s tls.mode matches 2 run function config:player/inventory/menu {category: "mode", type:   "boat", value: 2, model:    "oak_boat"}
+execute if score @s tls.mode matches 3 run function config:player/inventory/menu {category: "mode", type: "runner", value: 3, model: "player_head"}
+
+# ————— Categorie terrain —————
+# Kart  |  Boat  |  Runner
+execute if score @s tls.terrain matches 1 run function config:player/inventory/menu {category: "terrain", type:  "setblock", value: 1, model: "wooden_axe"}
+execute if score @s tls.terrain matches 2 run function config:player/inventory/menu {category: "terrain", type:      "fill", value: 2, model: "wooden_axe"}
+execute if score @s tls.terrain matches 3 run function config:player/inventory/menu {category: "terrain", type:     "clone", value: 3, model: "wooden_axe"}
+execute if score @s tls.terrain matches 4 run function config:player/inventory/menu {category: "terrain", type: "fillbiome", value: 4, model: "wooden_axe"}
 
 
 function config:player/inventory

@@ -8,7 +8,9 @@
                     "count": 1,
                     "components": {
                         "custom_data": {
-                            "undo": 1,
+                            "tools": {
+                                "undo": 1
+                            },
                             "config": 1
                         }
                     }
@@ -17,7 +19,7 @@
         }
     },
     "requirements": [
-        [ "undo" ]
+        ["undo"]
     ],
     "rewards": {
         "function": "config:events/undo"

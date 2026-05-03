@@ -1,0 +1,20 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "weapon": {
+                "items": "compass",
+                "count": 1,
+                "components": {
+                    "custom_data": {
+                        "tools": {
+                            "settings": 1
+                        }, 
+                        "config": 1
+                    }
+                }
+            }
+        }
+    }
+}

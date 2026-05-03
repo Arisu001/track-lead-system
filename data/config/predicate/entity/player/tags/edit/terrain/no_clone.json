@@ -1,0 +1,19 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "nbt": {
+            "Tags": ["tls__edit_terrain__no_clone"]
+        },
+        "equipment": {
+            "mainhand": {
+                "items": "paper",
+                "count": 1,
+                "components": {
+                    "item_model": "wooden_axe"
+                }
+            }
+        }
+    }
+}
+ 

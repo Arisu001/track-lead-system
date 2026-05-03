@@ -1,2 +1,2 @@
-tp @e[tag=cursor_trg] ~ -64 ~ ~ ~
-kill @e[tag=cursor_trg]
+tp @e[tag=tls_cursor_trg] ~ -64 ~ ~ ~
+kill @e[tag=tls_cursor_trg]

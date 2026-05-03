@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "has_pos_1": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "config:entity/player/item_in_hand/terrain"
+                    }
+                ],
+                "entity": {
+                    "type": "interaction",
+                    "nbt": {
+                        "Tags": ["tls__player_cursor__trg"]
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["has_pos_1"]
+    ],
+    "rewards": {
+        "function": "config:events/edit/terrain"
+    },
+    "sends_telemetry_event": true
+}

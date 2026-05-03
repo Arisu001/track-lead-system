@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "uninstall": {
+        "datapack": {
             "trigger": "using_item",
             "conditions": {
                 "item": {
@@ -8,7 +8,9 @@
                     "count": 1,
                     "components": {
                         "custom_data": {
-                            "uninstall": 1,
+                            "tools": {
+                                "uninstall": 1
+                            },
                             "config": 1
                         }
                     }
@@ -17,7 +19,7 @@
         }
     },
     "requirements": [
-        [ "uninstall" ]
+        ["datapack"]
     ],
     "rewards": {
         "function": "config:events/uninstall"

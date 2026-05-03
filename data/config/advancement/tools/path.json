@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "path": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "paper",
+                    "count": 1,
+                    "components": {
+                        "item_model": "wooden_axe"
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["path"]
+    ],
+    "sends_telemetry_event": true
+}

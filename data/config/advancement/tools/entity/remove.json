@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "remove": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "paper",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "entity": {
+                                "remove": 1
+                            },
+                            "config": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["remove"]
+    ],
+    "rewards": {
+        "function": "config:events/entity/remove"
+    },
+    "sends_telemetry_event": true
+}

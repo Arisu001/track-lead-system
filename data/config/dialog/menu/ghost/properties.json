@@ -10,8 +10,8 @@
 			"key": "ghost_camera",
 			"label": "Camera",
 			"options": [
-				{"id": "free_cam", "display": { "text": "Free Camera", "color": "blue"}, "initial": false},
-				{"id": "spectate", "display": { "text": "Spectate", "color": "light_purple"}, "initial": true}
+				{"id": "free_cam", "display": {"text": "Free Camera", "color":         "blue"}, "initial": false},
+				{"id": "spectate", "display": {"text": "Spectate",    "color": "light_purple"}, "initial":  true}
 			]
 		},
         {
@@ -19,9 +19,9 @@
 			"key": "ghost_player",
 			"label": "player",
 			"options": [
-				{"id": "best_player", "display": { "text": "Best Player", "color": "gold"}, "initial": true},
-				{"id": "all_player", "display": { "text": "All player", "color": "white"}, "initial": false},
-                {"id": "no_player", "display": { "text": "No Player", "color": "dark_gray"}, "initial": false}
+				{"id": "best_player", "display": {"text": "Best Player", "color":      "gold"}, "initial":  true},
+				{"id": "all_player",  "display": {"text":  "All player", "color":     "white"}, "initial": false},
+                {"id": "no_player",   "display": {"text":   "No Player", "color": "dark_gray"}, "initial": false}
 			]
 		}
 	],
@@ -32,8 +32,8 @@
 	"actions": [
 		{"label": "Confirm", "action": {"type": "dynamic/run_command", "template": "data modify storage config:settings ghost set value {properties: {camera: \"$(ghost_camera)\", player: \"$(ghost_player)\"}}"}},
 
-		{"label": { "text": "Back to ", "extra": [{"text": "ghost ", "color": "gray", "italic": true}, {"text": "menu"}]}, "action": {"type": "show_dialog", "dialog": "config:menu/ghost"}},
-		{"label": { "text": "Back to ", "extra": [{"text": "menu", "color": "gold", "italic": true}]}, "action": {"type": "show_dialog", "dialog": "config:menu"}},
-		{"label": { "text": "Back to main menu"}, "action": {"type": "show_dialog", "dialog": "config:config"}}
+		{"label": { "text": 	      "Back to ", "extra": [{"text": "ghost ", "color": "gray", "italic":   true}, {"text": "menu"}]}, "action": {"type": "show_dialog", "dialog": "config:menu/ghost"}},
+		{"label": { "text": 	      "Back to ", "extra": [{"text":   "menu", "color": "gold", "italic":   true}]}, 				   "action": {"type": "show_dialog", "dialog":       "config:menu"}},
+		{"label": { "text": "Back to main menu"}, 																					   "action": {"type": "show_dialog", "dialog":     "config:config"}}
 	]
 }

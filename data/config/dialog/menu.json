@@ -19,11 +19,11 @@
 	"after_action": "close",
 	"columns": 2,
 	"actions": [
-		{"label": { "text": "Path", "color": "aqua"}, "action": {"type": "show_dialog", "dialog": "config:menu/path"}},
-		{"label": { "text": "Edit", "color": "gold"}, "action": {"type": "show_dialog", "dialog": "config:menu/edit"}},
-		{"label": { "text": "Mode", "color": "light_purple"}, "action": {"type": "show_dialog", "dialog": "config:menu/mode"}},
+		{"label": { "text": "Path", "color":         "aqua"}, 	      "action": {"type": "show_dialog", "dialog": "config:menu/path"}},
+		{"label": { "text": "Edit", "color":         "gold"}, 	      "action": {"type": "show_dialog", "dialog": "config:menu/edit"}},
+		{"label": { "text": "Mode", "color": "light_purple"}, 		  "action": {"type": "show_dialog", "dialog": "config:menu/mode"}},
 		
 		{"label": { "text": "Ghost", "color": "gray"}, "action": {"type": "show_dialog", "dialog": "config:menu/ghost"}},
-		{"label": { "text": "Back to main menu"}, "action": {"type": "show_dialog", "dialog": "config:config"}}
+		{"label": { "text":      "Back to main menu"}, "action": {"type": "show_dialog", "dialog":     "config:config"}}
 	]
 }

@@ -1,0 +1,554 @@
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "No Targeted Entity",
+            "color": "dark_green",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {"text":       ": ", "color": "yellow"},
+                {"text":      "???", "color":  "yellow", "bold": false},
+                {"text":    "  |  ", "color":   "white", "bold": false},
+                {"text": "No found", "color":    "gray", "bold": false}
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/target/no_path"
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Entity ",
+            "color": "dark_green",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {"text":       "Start", "color": "green", "bold": false},
+                {"text":       "  |  ", "color": "white", "bold": false},
+                {"text": "Right-click", "color":  "gray", "bold": false}
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/target/has_start"
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Targeted Entity",
+            "color": "dark_green",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {"text":          ": ", "color": "yellow"},
+                {"text":  "Checkpoint", "color":    "gold", "bold": false},
+                {"text":       "  |  ", "color":   "white", "bold": false},
+                {"text": "Right-click", "color":    "gray", "bold": false}
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/target/has_checkpoint"
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Targeted Entity",
+            "color": "dark_green",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {"text":          ": ", "color": "yellow"},
+                {"text":      "Finish", "color":     "red", "bold": false},
+                {"text":       "  |  ", "color":   "white", "bold": false},
+                {"text": "Right-click", "color":    "gray", "bold": false}
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/target/has_finish"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "INFO",
+                "color": "blue",
+                "bold": true,
+                "italic": false,
+                "underlined": true,
+                "extra": [
+                    {
+                        "text": ":",
+                        "color": "yellow",
+                        "underlined": false
+                    }
+                ]
+            },
+            ""
+        ],
+        "mode": "replace_section",
+        "offset": 0,
+        "size": 8
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "No entity targeted",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/target/no_path"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to hide",
+                        "color": "gray"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/toggle/visible/start"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to hide",
+                        "color": "gray"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/toggle/visible/checkpoint"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to hide",
+                        "color": "gray"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/toggle/visible/finish"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to show",
+                        "color": "white"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/toggle/hide/start"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to show",
+                        "color": "white"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/toggle/hide/checkpoint"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to show",
+                        "color": "white"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/toggle/hide/finish"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            "",
+            {
+                "text": "----------------------------",
+                "color": "dark_gray",
+                "italic": false
+            },
+            ""
+        ],
+        "mode": "replace_section",
+        "offset": 3,
+        "size": 4
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Actual",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Nothing",
+                        "color": "red"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/target/no_path"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Actual",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Visible",
+                        "color": "green"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/toggle/visible/start"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Actual",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Visible",
+                        "color": "green"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/toggle/visible/checkpoint"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Actual",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Visible",
+                        "color": "green"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/toggle/visible/finish"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Actual",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Hide",
+                        "color": "dark_gray"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/toggle/hide/start"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Actual",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Hide",
+                        "color": "dark_gray"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/toggle/hide/checkpoint"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Actual",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Hide",
+                        "color": "dark_gray"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/toggle/hide/finish"
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "enchantments": {},
+            "item_model": "spider_eye"
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/target/no_path"
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "consumable": {
+                "consume_seconds": 999999999,
+                "has_consume_particles": false
+            },
+            "enchantments": {
+                "infinity": 3
+            },
+            "item_model": "fermented_spider_eye"
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/target/has_path"
+            }
+        ]
+    },
+    {
+        "function": "toggle_tooltips",
+        "toggles": {
+            "consumable": true,
+            "enchantments": false,
+            "unbreakable": true
+        }
+    }
+]

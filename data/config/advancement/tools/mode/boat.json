@@ -19,7 +19,7 @@
         }
     },
     "requirements": [
-        [ "has_placed" ]
+        ["has_placed"]
     ],
     "sends_telemetry_event": true
 }

@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "toggle": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "paper",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "entity": {
+                                "toggle": 1
+                            },
+                            "config": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["toggle"]
+    ],
+    "rewards": {
+        "function": "config:events/entity/toggle"
+    },
+    "sends_telemetry_event": true
+}

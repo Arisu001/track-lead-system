@@ -1,0 +1,155 @@
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Targeted Entity",
+            "color": "dark_green",
+            "bold": true,
+            "italic": false, 
+            "extra": [
+                {"text":       ": ", "color":       "yellow"},
+                {"text":      "???", "color":        "yellow", "bold": false},
+                {"text":  "   |   ", "color":         "white", "bold": false},
+                {"text": "Property", "color":         "blue"},
+                {"text":       ": ", "color":       "yellow"},
+                {"text":      "???", "color":        "yellow", "bold": false},
+                {"text":  "   |   ", "color":         "white", "bold": false},
+                {"text":     "Mode", "color": "light_purple"},
+                {"text":       ": ", "color":       "yellow"},
+                {"text":      "???", "color":        "yellow", "bold": false}
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/target/no_path"
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "NBT Weave",
+            "color": "light_purple",
+            "italic": false
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/target/has_path"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "INFO",
+                "color": "blue",
+                "bold": true,
+                "italic": false,
+                "underlined": true,
+                "extra": [
+                    {
+                        "text": ":",
+                        "color": "yellow", 
+                        "underlined": false
+                    }
+                ]
+            },
+            ""
+        ],
+        "mode": "replace_section",
+        "offset": 0,
+        "size": 8
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "No entity targeted",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/target/no_path"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to modify",
+                        "color": "dark_purple"
+                    }
+                ]
+            },
+            "",
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Left-click to select",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/target/has_path"
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "enchantments": {}
+        },
+        "condition": "reference",
+        "name": "config:entity/player/tags/target/no_path"
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "enchantments": {
+                "infinity": 3
+            }
+        },
+        "condition": "reference",
+        "name": "config:entity/player/tags/target/has_path"
+    },
+    {
+        "function": "toggle_tooltips",
+        "toggles": {
+            "enchantments": false,
+            "unbreakable": true
+        }
+    }
+]

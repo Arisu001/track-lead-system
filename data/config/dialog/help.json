@@ -11,6 +11,6 @@
 	"actions": [
 		{"label": {"text": "How to use", "color": "green"}, "action": {"type": "run_command", "command": "trigger tls_Help set 1"}},
 
-		{"label": { "text": "Back to main menu"}, "action": {"type": "show_dialog", "dialog": "config:config"}}
+		{"label": {"text": "Back to main menu"}, "action": {"type": "show_dialog", "dialog": "config:config"}}
 	]
 }

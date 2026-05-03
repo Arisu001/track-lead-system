@@ -1,0 +1,17 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "vehicle": {
+            "type": "#config:vehicle",
+            "nbt": {
+                "Tags": ["tls_mode"]
+            },
+            "passenger": {
+                "nbt": {
+                    "Tags": ["tls_racer"]
+                }
+            }
+        }
+    }
+}

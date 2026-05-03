@@ -4,6 +4,13 @@ scoreboard objectives add tms.value dummy
 scoreboard objectives add tms.var dummy
 scoreboard objectives add tls.rank dummy
 scoreboard objectives add tls.id dummy
+scoreboard objectives add tls.toggle__start dummy
+scoreboard objectives add tls.toggle__checkpoint dummy
+scoreboard objectives add tls.toggle__finish dummy
+scoreboard objectives add tls.path dummy
+scoreboard objectives add tls.mode dummy
+scoreboard objectives add tls.terrain dummy
+scoreboard objectives add tls.rules dummy
 scoreboard objectives add tls.record dummy
 scoreboard objectives add tls.play_record dummy
 scoreboard objectives add tls.item__pseudo dummy
@@ -28,7 +35,6 @@ scoreboard objectives add tls_Properties trigger
 scoreboard objectives add tls_Path trigger
 scoreboard objectives add tls_Mode trigger
 scoreboard objectives add tls_Toggle trigger
-
 
 
 execute as @a run schedule function config:init/datapack 5t

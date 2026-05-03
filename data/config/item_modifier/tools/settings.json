@@ -1,0 +1,243 @@
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Settings",
+            "color": "dark_gray",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {
+                    "text": "  |  ",
+                    "color": "white",
+                    "bold": false
+                },
+                {
+                    "text": "Right-click",
+                    "color": "gray",
+                    "bold": false
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/settings/closed"
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Settings",
+            "color": "dark_gray",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {
+                    "text": "  |  ",
+                    "color": "white",
+                    "bold": false
+                },
+                {
+                    "text": "Left-click",
+                    "color": "gray",
+                    "bold": false
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/settings/opened"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "INFO",
+                "color": "blue",
+                "bold": true,
+                "italic": false,
+                "underlined": true,
+                "extra": [
+                    {
+                        "text": ":",
+                        "color": "yellow",
+                        "underlined": false
+                    }
+                ]
+            },
+            ""
+        ],
+        "mode": "insert",
+        "offset": 0
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to open the settings",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/settings/closed"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Left-click to close the settings",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/settings/opened"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            "",
+            {
+                "text": "----------------------------",
+                "color": "dark_gray",
+                "italic": false
+            },
+            ""
+        ],
+        "mode": "replace_section",
+        "offset": 3,
+        "size": 4
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Actual",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Closed",
+                        "color": "red"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/settings/closed"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Actual",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Opened",
+                        "color": "green"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/settings/opened"
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {},
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/settings/opened"
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "consumable": {
+                "consume_seconds": 999999999,
+                "has_consume_particles": false
+            },
+            "enchantments": {
+                "infinity": 3
+            }
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/settings/closed"
+            }
+        ]
+    },
+    {
+        "function": "toggle_tooltips",
+        "toggles": {
+            "consumable": true,
+            "enchantments": false,
+            "unbreakable": true
+        }
+    }
+]

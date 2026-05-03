@@ -1,0 +1,412 @@
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Setblock",
+            "color": "white",
+            "bold": true,
+            "italic": false
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/item_in_hand/terrain/setblock"
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Fill",
+            "color": "green",
+            "bold": true,
+            "italic": false
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/item_in_hand/terrain/fill"
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Clone",
+            "color": "light_purple",
+            "bold": true,
+            "italic": false
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/item_in_hand/terrain/clone"
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "text": "Fillbiome",
+            "color": "dark_green",
+            "bold": true,
+            "italic": false
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/item_in_hand/terrain/fillbiome"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "INFO",
+                "color": "blue",
+                "bold": true,
+                "italic": false,
+                "underlined": true,
+                "extra": [
+                    {
+                        "text": ":",
+                        "color": "yellow", 
+                        "underlined": false
+                    }
+                ]
+            },
+            ""
+        ],
+        "mode": "replace_section",
+        "offset": 0,
+        "size": 8
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to set pos 1",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/item_in_hand/terrain/setblock"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to set pos 1",
+                        "color": "dark_purple"
+                    }
+                ]
+            },
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Left-click to set pos 2",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "condtitions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/edit/terrain/has_fill"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to set pos 1",
+                        "color": "dark_purple"
+                    }
+                ]
+            },
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Left-click to set pos 2",
+                        "color": "dark_purple"
+                    }
+                ]
+            },
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to set pos 3",
+                        "color": "dark_purple"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/item_in_hand/terrain/clone"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            "",
+            {
+                "text": "----------------------------",
+                "color": "dark_gray",
+                "italic": false
+            },
+            ""
+        ], 
+        "mode": "replace_section",
+        "offset": 3,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/item_in_hand/terrain/setblock"
+            }
+        ]
+    }, 
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            "",
+            {
+                "text": "----------------------------",
+                "color": "dark_gray",
+                "italic": false
+            },
+            ""
+        ], 
+        "mode": "replace_section",
+        "offset": 4,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/edit/terrain/has_fill"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            "",
+            {
+                "text": "----------------------------",
+                "color": "dark_gray",
+                "italic": false
+            },
+            ""
+        ], 
+        "mode": "replace_section",
+        "offset": 5,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/item_in_hand/terrain/clone"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Pos 1",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Undefined",
+                        "color": "dark_gray"
+                    }
+                ]
+            }
+        ], 
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/item_in_hand/terrain/setblock"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Pos 1",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Undefined",
+                        "color": "dark_gray"
+                    }
+                ]
+            },
+            {
+                "text": "Pos 2",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Undefined",
+                        "color": "dark_gray"
+                    }
+                ]
+            }
+        ], 
+        "mode": "replace_section",
+        "offset": 7,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/tags/edit/terrain/has_fill"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Pos 1",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Undefined",
+                        "color": "dark_gray"
+                    }
+                ]
+            },
+            {
+                "text": "Pos 2",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Undefined",
+                        "color": "dark_gray"
+                    }
+                ]
+            },
+            {
+                "text": "Pos 3",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Undefined",
+                        "color": "dark_gray"
+                    }
+                ]
+            }
+
+        ], 
+        "mode": "replace_section",
+        "offset": 8,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "config:entity/player/item_in_hand/terrain/clone"
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "enchantments": {
+                "infinity": 3
+            }
+        }
+    },
+    {
+        "function": "toggle_tooltips",
+        "toggles": {
+            "enchantments": false,
+            "unbreakable": true
+        }
+    }
+]
